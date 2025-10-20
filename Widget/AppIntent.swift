@@ -9,10 +9,28 @@ import WidgetKit
 import AppIntents
 
 struct ConfigurationAppIntent: WidgetConfigurationIntent {
-    static var title: LocalizedStringResource { "Configuration" }
-    static var description: IntentDescription { "This is an example widget." }
+    static var title: LocalizedStringResource { "生活记录小组件" }
+    static var description: IntentDescription { "显示今日生活记录和事项完成情况" }
 
-    // An example configurable parameter.
-    @Parameter(title: "Favorite Emoji", default: "😃")
-    var favoriteEmoji: String
+    // 小组件显示模式
+    @Parameter(title: "显示模式", default: .summary)
+    var displayMode: WidgetDisplayMode
+}
+
+enum WidgetDisplayMode: String, CaseIterable, AppEnum {
+    case summary = "summary"
+    case detailed = "detailed"
+    case mood = "mood"
+    
+    static var typeDisplayRepresentation: TypeDisplayRepresentation {
+        "显示模式"
+    }
+    
+    static var caseDisplayRepresentations: [WidgetDisplayMode: DisplayRepresentation] {
+        [
+            .summary: "概览模式",
+            .detailed: "详细模式", 
+            .mood: "心情模式"
+        ]
+    }
 }

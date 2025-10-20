@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleAlternateIcons</key>
+	<string></string>
+	<key>CFBundleDisplayName</key>
+	<string>马夫</string>
+	<key>CFBundleName</key>
+	<string>马夫</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.lifestyle</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>马夫需要访问您的位置信息来获取当地天气数据，为您提供更准确的天气信息。</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>马夫需要访问您的位置信息来获取当地天气数据，为您提供更准确的天气信息。</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundleAlternateIcons</key>
+		<dict>
+			<key>Calendar</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Calendar</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>Chart</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Chart</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+		</dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>AppIcon</string>
+			</array>
+			<key>UIPrerenderedIcon</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<key>CFBundleSupportURL</key>
+	<string>https://tangxiaojun.github.io/mafu-support</string>
+	<key>NSPrivacyPolicyURL</key>
+	<string>https://tangxiaojun.github.io/mafu-support/privacy-policy.html</string>
+</dict>
+</plist>

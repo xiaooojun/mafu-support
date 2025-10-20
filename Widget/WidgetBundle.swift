@@ -9,8 +9,8 @@ import WidgetKit
 import SwiftUI
 
 @main
-struct WidgetBundle: WidgetBundle {
+struct LifeWidgetBundle: WidgetBundle {
     var body: some Widget {
-        Widget()
+        TodayWidget()
     }
 }
