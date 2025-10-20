@@ -466,7 +466,7 @@ struct MatterHistoryView: View {
                         .foregroundColor(isToday ? .white : (isCurrentMonth ? .primary : .secondary))
                     
                     // 选项显示
-                    if let record = record {
+                    if record != nil {
                         optionIndicator
                     }
                 }
